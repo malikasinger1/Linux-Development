@@ -13,9 +13,12 @@ sudo echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' 
 sudo apt-get update 
 sudo apt-get install google-chrome-stable
 
-# installing nodejs and npm 
+# installing nodejs ##Doc https://github.com/nodesource/distributions/blob/master/README.md#debinstall
 sudo apt-get update
-sudo apt-get install nodejs
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
+# install npm
 sudo apt-get install npm
 nodejs -v
 
