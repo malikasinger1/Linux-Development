@@ -62,6 +62,24 @@ sudo chmod 777 ./Hubstaff-1.5.17-52c95d23.sh
 sudo rm ./Hubstaff-1.5.17-52c95d23.sh
 
 
+# install python 3.6.8:
+# https://www.python.org/downloads/release/python-368/ download zipprd tarball source
+# https://docs.python.org/3/using/unix.html#building-python
+cd ~
+wget https://www.python.org/ftp/python/3.6.8/Python-3.6.8.tgz
+tar xzf ./Python-3.6.8.tgz
+cd Python-3.6.8
+sudo apt-get install build-essential
+./configure
+sudo apt install make
+make
+sudo apt-get install zlib1g-dev
+sudo make install
+
+
+
+echo "installation completed"
+
 
 
 
