@@ -66,6 +66,7 @@ sudo rm ./Hubstaff-1.5.17-52c95d23.sh
 # https://www.python.org/downloads/release/python-368/ download zipprd tarball source
 # https://docs.python.org/3/using/unix.html#building-python
 cd ~
+sudo apt install libssl-dev # https://stackoverflow.com/a/49696062 # python3.6 have this specific problem, dont have ssl by default so it makes problem later in installin pip packees
 wget https://www.python.org/ftp/python/3.6.8/Python-3.6.8.tgz
 tar xzf ./Python-3.6.8.tgz
 cd Python-3.6.8
@@ -75,6 +76,13 @@ sudo apt install make
 make
 sudo apt-get install zlib1g-dev
 sudo make install
+sudo pip3 install -r requirements.txt # update pip to latest version after installation
+
+
+
+
+
+
 
 
 
