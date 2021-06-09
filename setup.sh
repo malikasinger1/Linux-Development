@@ -28,9 +28,8 @@ sudo npm install firebase-tools -g
 #install typescript
 sudo npm install -g typescript
 
-#install git
-sudo apt install git
-
+#install git https://git-scm.com/download/linux
+apt-get install git 
 
 #install smartgit
 cd ~
