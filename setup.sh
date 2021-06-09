@@ -79,9 +79,15 @@ sudo make install
 sudo pip3 install -r requirements.txt # update pip to latest version after installation
 
 
+# map keys
+# xmodmap -pk # print all keys of system
+# already found my keys followin:
 
+#     134    	0xffec (Super_R)	0x0000 (NoSymbol)	0xffec (Super_R)
+#      64    	0xffe9 (Alt_L)	0xffe7 (Meta_L)	0xffe9 (Alt_L)	0xffe7 (Meta_L)
 
-
+#      42    	0x0067 (g)	0x0047 (G)	0x0067 (g)	0x0047 (G)	
+#     105    	0xffe4 (Control_R)	0x0000 (NoSymbol)	0xffe4 (Control_R)	
 
 
 
